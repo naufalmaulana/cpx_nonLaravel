@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+        <!-- {{-- CSS --}} -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="/css/styles.css">
+    
+        <!-- {{-- JS --}} -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="/js/app.js"></script>
+</head>
+<body>
+        <!-- Navigation-->
+<nav class="navbar navbar-expand-md navbar-dark bg-black py-1 px-2">
+    <div class="container-xxl">
+      <!-- navbar brand / title -->
+      <a class="navbar-brand col-md-2" href="/index.html">
+        <img src="/assets/cardotgologo.svg" class="nav-logo" width="70" height="70" alt="car.go logo">
+      </a>
+      <!-- toggle button for mobile nav -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- navbar links -->
+      <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+        <ul class="navbar-nav">
+            <li class="nav-item ">
+                <a class="nav-link fw-bold text-light hover-txt-blue" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link fw-bold text-light hover-txt-blue" href="/aboutus.html">About Us</a>
+            </li>
+          <li class="nav-item">
+                <a class="nav-link fw-bold text-light hover-txt-blue" href="#footer">Contact Us</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link dropdown-toggle hover-txt-blue text-white" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-person-fill"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="{{ route('login') }}">Log out</a></li>
+            </ul>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HeroSection -->
+  <!-- <section id="aboutushero" class="aboutus-section vh-100">
+    <div class="container-lg h-100 ">
+        <div class="title"></div>
+        <div class="row align-items-center h-100 ">
+            <div class="col-md-6">
+                <h1 class="text-white fw-bold mb-5">
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo voluptates magnam soluta modi. Dolorum beatae nemo sed molestiae aliquam accusamus dicta omnis aliquid fugiat, rem voluptas placeat officia nostrum aut!
+                </h1>
+                <button class="btn bg-blue text-white fw-bold px-4 rounded-pill fs-5">Read More</button>
+            </div>
+        </div>
+    </div>
+  </section> -->
+
+  <!-- OusstorySection -->
+  <section id="ourstory" class=" bg-blue py-5">
+    <div class="container-lg">
+        <div class="row justify-content-center align-items-center g-4">
+            <div class="col-md-6">
+                <h1 class="fw-bold txt-black">OUR STORY</h1>
+                <p class="txt-white fs-5">
+                   We've been extra since the start. That’s because our founder believed whole-heartedly in going the extra mile to bring high quality, safe and quick air cargo delivery services into the world. Our vision first came to life in 2021 when we took a gamble and make our own company from our dissatisfaction with at the time the current air cargo delivery services. It was a bold move. We will always care about the customer satisfaction therefore we will keep improving and being the best at this indutry.
+                </p>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="/assets/image0.jpeg" alt="" class="img-fluid rounded" width="500" height="500">
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- OutteamSection -->
+  <section id="ourteam" class="bg-black p-5">
+    <div class="container-fluid  mt-100">
+        <h1 class="text-white fw-bold text-center mb-4">
+            Meet The Founders
+        </h1>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card bg-black">
+                    <div class="card-body text-center text-white"> <img src="/assets/image1.jpeg" class="rounded-circle img-fluid" width="200" height="200">
+                        <h2 class="card-title mt-2 mb-1">Naufal Maulana</h2> 
+                        <span class="fs-5 mb-3 font-weight-bold txt-blue">Chief Technological Officer</span>
+                        <!-- <p class="mb-3 mt-3 txt-grey">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"</p> -->
+                        <ul class="list-inline">
+                            <li class="list-inline-item c-pointer"><a href="https://www.instagram.com/tb.naufal/" class="text-white"><i class="bi bi-instagram"></i></a></li>
+                            <li class="list-inline-item c-pointer"><a href="https://twitter.com/frontendguy11" class="text-white"><i class="bi bi-twitter"></i></a></li>
+                            <li class="list-inline-item c-pointer"><a href="https://www.linkedin.com/in/naufal-maulana-92736a169/" class="text-white"><i class="bi bi-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card bg-black">
+                    <div class="card-body text-center text-white"> <img src="/assets/image2.jpeg" class="rounded-circle" width="200" height="200">
+                        <h2 class="card-title mt-2 mb-1">Nadeem Rasheed</h2> 
+                        <span class="fs-5 mb-3 font-weight-bold txt-blue">Chief Executive Officer</span>
+                        <!-- <p class="mb-3 mt-3 txt-grey">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"</p> -->
+                        <ul class="list-inline">
+                            <li class="list-inline-item c-pointer"><a href="https://www.instagram.com/nadim_rasheed/" class="text-white"><i class="bi bi-instagram"></i></a></li>
+                            <li class="list-inline-item c-pointer"><a href="#" class="text-white"><i class="bi bi-twitter"></i></a></li>
+                            <li class="list-inline-item c-pointer"><a href="https://www.linkedin.com/in/nadimrasheed/" class="text-white"><i class="bi bi-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card bg-black">
+                    <div class="card-body text-center text-white"> <img src="/assets/image3.jpeg" class="rounded-circle" width="200" height="200">
+                        <h2 class="card-title mt-2 mb-1">Tafan Pangestu</h2> 
+                        <span class="fs-5 mb-3 font-weight-bold txt-blue">Chief Operational Officer</span>
+                        <!-- <p class="mb-3 mt-3 txt-grey">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"</p> -->
+                        <ul class="list-inline">
+                            <li class="list-inline-item c-pointer"><a href="https://www.instagram.com/whoistafan/" class="text-white"><i class="bi bi-instagram"></i></a></li>
+                            <li class="list-inline-item c-pointer"><a href="#" class="text-white"><i class="bi bi-twitter"></i></a></li>
+                            <li class="list-inline-item c-pointer"><a href="https://www.linkedin.com/in/tafan-alam-8554281b8/" class="text-white"><i class="bi bi-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- AreaofcoverageSection -->
+  <section id="area" class="py-5">
+      <div class="container-lg">
+          <div class="row justify-content-center align-items-center g4 mb-5 text-center">
+            <h1 class="txt-blue fw-bold">100% <span class="txt-grey">Cities Covered Around The Nation</span></h1>
+          </div>
+          <!-- <div class="row justify-content-center align-items-center g4 mb-5">
+              <div class="col-md-3">
+                  <div class="row  align-items-center">
+                      <div class="col-md-3 text-md-center">
+                          <h1 class="txt-blue fw-bold">34</h1>
+                      </div>
+                      <div class="col-md-4">
+                          <p class="fs-4 txt-grey lh-1">
+                              Provinces <br class="d-none d-md-block">Covered
+                          </p>
+                      </div>
+                  </div>
+                  <div class="row justify-content-center align-items-center">
+                    <div class="col-md-12">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ut voluptas reiciendis ex animi enim nobis id quaerat aut tempora?
+                        </p>
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="row  align-items-center">
+                      <div class="col-md-3 text-md-center">
+                          <h1 class="txt-blue fw-bold">100</h1>
+                      </div>
+                      <div class="col-md-4 ">
+                          <p class="fs-4 txt-grey lh-1">
+                              Cities <br class="d-none d-md-block">Covered    
+                          </p>
+                      </div>
+                  </div>
+                  <div class="row justify-content-center align-items-center">
+                    <div class="col-md-12">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ut voluptas reiciendis ex animi enim nobis id quaerat aut tempora?
+                        </p>
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="row  align-items-center">
+                      <div class="col-md-4 text-md-center">
+                          <h1 class="txt-blue fw-bold">1000</h1>
+                      </div>
+                      <div class="col-md-4 ">
+                          <p class="fs-4 txt-grey lh-1">
+                              Clients <br class="d-none d-md-block">Satisfied
+                          </p>
+                      </div>
+                  </div>
+                  <div class="row justify-content-center align-items-center">
+                    <div class="col-md-12">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ut voluptas reiciendis ex animi enim nobis id quaerat aut tempora?
+                        </p>
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="row  align-items-center">
+                      <div class="col-md-4 text-md-center">
+                          <h1 class="txt-blue fw-bold ">100%</h1>
+                      </div>
+                      <div class="col-md-4 ">
+                          <p class="fs-4 txt-grey lh-1">
+                              Professional <br class="d-none d-md-block">Approach
+                          </p>
+                      </div>
+                  </div>
+                  <div class="row justify-content-center align-items-center">
+                    <div class="col-md-12">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ut voluptas reiciendis ex animi enim nobis id quaerat aut tempora?
+                        </p>
+                    </div>
+                </div>
+              </div>
+          </div> -->
+          <div class="row justify-content-center align-items-center">
+              <div class="col-12 text-center">
+                  <img src="/assets/indonesia.svg" alt="" class="img-fluid">
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- FooterSection -->
+  <section id="footer">
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+  <div class="container-fluid px-0">
+      <footer class="text-center text-lg-start text-white bg-black">
+          <div class="container text-center text-md-start g-5 ">
+              <div class="row py-5 border-bottom border-grey">
+                  <div class="col-md-4">
+                      <img src="/assets/cardotgologo.svg" alt="" class="img-fluid mb-3" width="50" height="50">
+                      <p class="fw-bold mb-2">Tanggerang, Indonesia | Info@car.go.id</p>
+                      <div class="mb-3">
+                        <a href="https://www.facebook.com/profile.php?id=100075554903678" class="text-white h4  text-decoration-none ">
+                            <i class="bi bi-facebook social-hover-color-fb"></i>
+                          </a>
+                          <a href="https://www.instagram.com/cardotgo.id/" class="text-white h4 ms-3 text-decoration-none ">
+                            <i class="bi bi-instagram social-hover-color-ig"></i>
+                          </a>
+                          <!-- <a href="#" class="text-white h4 ms-3 text-decoration-none ">
+                            <i class="bi bi-linkedin social-hover-color-linkedin"></i>
+                          </a> -->
+                      </div>
+                      <p class="fw-bold">+62 - 812 - 8848 - 7450</p>
+                  </div>
+                  <div class="col-md-2">
+                      <h6 class="text-uppercase fw-bold ">Useful Links</h6>
+                      <hr class="mb-3 mt-0 d-inline-block mx-auto bg-grey " width="85" height="2px"/>
+                      <p>
+                          <a href="./index.html" class="txt-grey text-decoration-none">Home</a>
+                      </p>
+                      <p>
+                          <a href="/aboutus.html" class="txt-grey text-decoration-none">About Us</a>
+                      </p>
+                      <!-- <p>
+                          <a href="#features" class="txt-grey text-decoration-none">Features</a>
+                      </p> -->
+                      <p>
+                          <a href="#footer" class="txt-grey text-decoration-none">Contact Us</a>
+                      </p>
+                  </div>
+                  <div class="col-md-6">
+                      <h6 class="text-uppercase fw-bold ">Be in the know</h6>
+                      <hr class="mb-3 mt-0 d-inline-block mx-auto bg-grey " width="125" height="2px"/>
+                      <p class="txt-grey mb-3">Subscribe to our daily mail post to be updated about many events and promos from our company by submiting your email address down below !</p>
+                      <div class="">
+                          <form>
+                              <label for="email" class="form-label txt-grey">Email</label>
+                              <div class="input-group mb-4">
+                                  <input type="text" id="email" class="form-control" />
+                                  <button class="btn bg-blue txt-white fw-bold rounnded-pill px-md-5">Submit</button>
+                              </div>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+              <div class="row justify-content-between align-items-center py-3">
+                  <div class="col-md-6">
+                      <p class="fw-bold">Copyright @2021 PT.Tujuh muda group</p>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="row justify-content-end">
+                          <div class="col-md-4 text-md-end">
+                              <button class="fw-bold btn bg-black txt-white p-0"   data-bs-toggle="modal" data-bs-target="#tos">Terms Of Services</button>
+                          </div>
+                          <div class="col-md-4 text-md-end">
+                              <button class="fw-bold btn bg-black txt-white p-0"   data-bs-toggle="modal" data-bs-target="#pp">Privacy Policy</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+  </div>
+<!-- End of .container -->
+</section>
+
+<!-- TermsofserviceSection -->
+<!-- Modal -->
+<div class="modal fade" id="tos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="exampleModalLabel">Terms Of Service</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <h4>1. Terms</h4>
+          
+          <p>By accessing this Website, accessible from ctiposexpress.com, you are agreeing to be bound by these Website Terms and Conditions of Use and agree that you are responsible for the agreement with any applicable local laws. If you disagree with any of these terms, you are prohibited from accessing this site. The materials contained in this Website are protected by copyright and trade mark law.</p>
+          
+          <h4>2. Use License</h4>
+          
+          <p>Permission is granted to temporarily download one copy of the materials on Car.Go's Website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p>
+          
+          <ul>
+              <li>modify or copy the materials;</li>
+              <li>use the materials for any commercial purpose or for any public display;</li>
+              <li>attempt to reverse engineer any software contained on Car.Go's Website;</li>
+              <li>remove any copyright or other proprietary notations from the materials; or</li>
+              <li>transferring the materials to another person or "mirror" the materials on any other server.</li>
+          </ul>
+          
+          <p>This will let Car.Go to terminate upon violations of any of these restrictions. Upon termination, your viewing right will also be terminated and you should destroy any downloaded materials in your possession whether it is printed or electronic format.</p>
+          
+          <h4>3. Disclaimer</h4>
+          
+          <p>All the materials on Car.Go’s Website are provided "as is". Car.Go makes no warranties, may it be expressed or implied, therefore negates all other warranties. Furthermore, Car.Go does not make any representations concerning the accuracy or reliability of the use of the materials on its Website or otherwise relating to such materials or any sites linked to this Website.</p>
+          
+          <h4>4. Limitations</h4>
+          
+          <p>Car.Go or its suppliers will not be hold accountable for any damages that will arise with the use or inability to use the materials on Car.Go’s Website, even if Car.Go or an authorize representative of this Website has been notified, orally or written, of the possibility of such damage. Some jurisdiction does not allow limitations on implied warranties or limitations of liability for incidental damages, these limitations may not apply to you.</p>
+          
+          <h4>5. Revisions and Errata</h4>
+          
+          <p>The materials appearing on Car.Go’s Website may include technical, typographical, or photographic errors. Car.Go will not promise that any of the materials in this Website are accurate, complete, or current. Car.Go may change the materials contained on its Website at any time without notice. Car.Go does not make any commitment to update the materials.</p>
+          
+          <h4>6. Links</h4>
+          
+          <p>Car.Go has not reviewed all of the sites linked to its Website and is not responsible for the contents of any such linked site. The presence of any link does not imply endorsement by Car.Go of the site. The use of any linked website is at the user’s own risk.</p>
+          
+          <h4>7. Site Terms of Use Modifications</h4>
+          
+          <p>Car.Go may revise these Terms of Use for its Website at any time without prior notice. By using this Website, you are agreeing to be bound by the current version of these Terms and Conditions of Use.</p>
+          
+          <h4>8. Your Privacy</h4>
+          
+          <p>Please read our Privacy Policy.</p>
+          
+          <h4>9. Governing Law</h4>
+          
+          <p>Any claim related to Car.Go's Website shall be governed by the laws of id without regards to its conflict of law provisions.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn bg-blue txt-white fw-bold" data-bs-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PrivacypolicySection -->
+<div class="modal fade" id="pp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="exampleModalLabel">Privacy Policy</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <p>At car.go.id, accessible from ctiposexpress.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by car.go.id and how we use it.</p>
+
+          <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.</p>
+
+          <p>This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in car.go.id. This policy is not applicable to any information collected offline or via channels other than this website.</p>
+
+          <h4>Consent</h4>
+
+          <p>By using our website, you hereby consent to our Privacy Policy and agree to its terms.</p>
+
+          <h4>Information we collect</h2>
+
+          <p>The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be made clear to you at the point we ask you to provide your personal information.</p>
+          <p>If you contact us directly, we may receive additional information about you such as your name, email address, phone number, the contents of the message and/or attachments you may send us, and any other information you may choose to provide.</p>
+          <p>When you register for an Account, we may ask for your contact information, including items such as name, company name, address, email address, and telephone number.</p>
+
+          <h4>How we use your information</h4>
+
+          <p>We use the information we collect in various ways, including to:</p>
+
+          <ul>
+          <li>Provide, operate, and maintain our website</li>
+          <li>Improve, personalize, and expand our website</li>
+          <li>Understand and analyze how you use our website</li>
+          <li>Develop new products, services, features, and functionality</li>
+          <li>Communicate with you, either directly or through one of our partners, including for customer service, to provide you with updates and other information relating to the website, and for marketing and promotional purposes</li>
+          <li>Send you emails</li>
+          <li>Find and prevent fraud</li>
+          </ul>
+
+          <h4>Log Files</h4>
+
+          <p>car.go.id follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services' analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information.</p>
+
+          <h4>Cookies and Web Beacons</h4>
+
+          <p>Like any other website, car.go.id uses 'cookies'. These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content based on visitors' browser type and/or other information.</p>
+
+          <p>For more general information on cookies, please read <a href="https://www.cookieconsent.com/">more on the Cookie Consent website</a>.</p>
+
+
+
+          <h4>Advertising Partners Privacy Policies</h4>
+
+          <P>You may consult this list to find the Privacy Policy for each of the advertising partners of car.go.id.</p>
+
+          <p>Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on car.go.id, which are sent directly to users' browser. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.</p>
+
+          <p>Note that car.go.id has no access to or control over these cookies that are used by third-party advertisers.</p>
+
+          <h4>Third Party Privacy Policies</h4>
+
+          <p>car.go.id's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options. </p>
+
+          <p>You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers' respective websites.</p>
+
+          <h4>CCPA Privacy Rights (Do Not Sell My Personal Information)</h4>
+
+          <p>Under the CCPA, among other rights, California consumers have the right to:</p>
+          <p>Request that a business that collects a consumer's personal data disclose the categories and specific pieces of personal data that a business has collected about consumers.</p>
+          <p>Request that a business delete any personal data about the consumer that a business has collected.</p>
+          <p>Request that a business that sells a consumer's personal data, not sell the consumer's personal data.</p>
+          <p>If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.</p>
+
+          <h4>GDPR Data Protection Rights</h4>
+
+          <p>We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following:</p>
+          <p>The right to access – You have the right to request copies of your personal data. We may charge you a small fee for this service.</p>
+          <p>The right to rectification – You have the right to request that we correct any information you believe is inaccurate. You also have the right to request that we complete the information you believe is incomplete.</p>
+          <p>The right to erasure – You have the right to request that we erase your personal data, under certain conditions.</p>
+          <p>The right to restrict processing – You have the right to request that we restrict the processing of your personal data, under certain conditions.</p>
+          <p>The right to object to processing – You have the right to object to our processing of your personal data, under certain conditions.</p>
+          <p>The right to data portability – You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.</p>
+          <p>If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.</p>
+
+          <h4>Children's Information</h4>
+
+          <p>Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.</p>
+
+          <p>car.go.id does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn bg-blue txt-white fw-bold" data-bs-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  var myModal = document.getElementById('myModal')
+  var myInput = document.getElementById('myInput')
+
+  myModal.addEventListener('shown.bs.modal', function () {
+  myInput.focus()
+  })
+</script>
+</body>
+</html>

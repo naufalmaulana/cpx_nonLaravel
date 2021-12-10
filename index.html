@@ -2,314 +2,391 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CPX</title>
+    <title>Document</title>
 
     <!-- {{-- CSS --}} -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/styles.css">
 
     <!-- {{-- JS --}} -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="{{asset('js/ScrollMagic.min.js')}}"></script>
-    <script src="{{asset('js/animation.gsap.min.js')}}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="/js/app.js"></script>
 </head>
 <body>
-    <div class="cpx-container">
-        <section class="landing" id="landing">
-            <div class="landing__navbar">
-                <ul>
-                    <li><a href="#landing">Home</a></li>
-                    <li><a href="#aboutus">About Us</a></li>
-                    <li><a href="#service">Service</a></li>
-                    <li><a href="#technology">Technology</a></li>
-                    <li><a href="#locations">Locations</a></li>
-                    <li><a href="#contactus">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="row">
-                <div class="landing__text col">
-                    <img class="landing__text--logo" src="assets/img/logo_HD.png" alt="">
-                    <h1 class="landing__text--h1">WELCOME TO <br>CITIPOS EXPRESS</h1>
-                    <p class="landing__text--tagline">Smart Pos for Smart City</p>
-                    <p class="landing__text--uses">Citipos will help you track your packages <br>and make you easy to manage your time</p>
-                    <!-- {{-- <a class="landing__text--plays" href="https://play.google.com/store/apps" target="_blank" rel="noopener noreferrer"> 
-                        <img src="{{url('assets/img/download_on.png')}}" alt="">
-                    </a>
-                    <a class="landing__text--apps" href="https://www.apple.com/id/app-store/" target="_blank" rel="noopener noreferrer"> 
-                        <img src="{{url('assets/img/download_on_apps.png')}}" alt="">
-                    </a> <br> --}} -->
-                    <a href="#aboutus">
-                        <button class="landing__text--btn">SEE MORE</button>
-                    </a>
-                </div>
-                <div class="col">
-                    <img src="/assets/img/Courier.svg" width="62.5%" alt="">
-                </div>
-            </div>
+    <!-- Navigation-->
+<nav class="navbar navbar-expand-md navbar-dark bg-black py-1 px-2">
+    <div class="container-xxl">
+      <!-- navbar brand / title -->
+      <a class="navbar-brand col-md-2" href="/index.html">
+        <img src="/assets/cardotgologo.svg" class="nav-logo" width="70" height="70" alt="car.go logo">
+      </a>
+      <!-- toggle button for mobile nav -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        </section>
-        <section class="aboutus" id="aboutus">
-            <!-- {{-- <div class="aboutus-container">
-                <div class="aboutus-container__left">
-                    <h1 class="aboutus-container__left--h1">
-                        About Us
-                    </h1>
-                    <p>
-                        Citipos express or CPX is a company that engaged in logistic fields. We focused on efficiency by minimizing the time and cost of shipping and maximizing the quality of our service. In this modern world we believe everything runs by gadget and technologies and that is why we develop an app that will makes it easier for users or customers to ship items and to check datas, we also very transparent about our datas to customer so customer wont have to be worried about the shipping process they will be able to check the status on their apps
-                    </p>
-                </div>
-                <div class="aboutus-container__right">
-                    <img src="{{url('assets/img/parcel.png')}}" alt="" style="width:250px;">
-                </div>
-            </div> --}} -->
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="aboutus-container">
-                        <div class="aboutus-container__left">
-                            <h1 class="aboutus-container__left--h1">
-                                About Us
-                            </h1>
-                            <p>
-                                Citipos express or CPX is a company that engaged in logistic fields. We focused on efficiency by minimizing the time and cost of shipping and maximizing the quality of our service. In this modern world we believe everything runs by gadget and technologies and that is why we develop an app that will makes it easier for users or customers to ship items and to check datas, we also very transparent about our datas to customer so customer wont have to be worried about the shipping process they will be able to check the status on their apps
-                            </p>
-                        </div>
-                        <div class="aboutus-container__right">
-                            <img src="/assets/img/parcel.svg" alt="" style="width:250px;">
-                        </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                      <div class="aboutus-container">
-                          <div class="aboutus-container__left">
-                            <h1 class="aboutus-container__left--h1-motto">
-                                Our Motto
-                            </h1> <br>
-                            <h2>Vision</h2>
-                            <p>We would like to provide our customer <br>convenience and efficiency in delivery <br>process.</p>
-                            <h2>Mission</h2>
-                            <p>Making CPX a widely known brand that <br>becomes the benchmark in the delivery <br>industry.</p>
-                          </div>
-                          <div class="aboutus-container__right">
-                            <img src="assets/img/truck 2.svg" alt="" style="width:400px;">
-                          </div>
-                      </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="our-team">
-                        <h1>our team</h1>
-                        <div class="our-team__container">
-                            <div class="our-team__container--content">
-                                <img src="assets/img/user.svg" alt="" style="width:150px;">
-                                <h2>CEO</h2>
-                                <p>Nadeem Rasheed</p>                          
-                            </div>
-                            <div class="our-team__container--content">
-                                <img src="assets/img/user.svg" alt="" style="width:150px;">   
-                                <h2>CTO</h2>
-                                <p>Naufal Maulana</p>                            
-                            </div>
-                            <div class="our-team__container--content">
-                                <img src="assets/img/user.svg" alt="" style="width:150px;">   
-                                <h2>COO</h2>
-                                <p>Tafan Pangestu</p>                            
-                            </div>
-                            <!-- {{-- <div class="our-team__container--content">
-                                <img src="{{url('assets/img/user.svg')}}" alt="" style="width:150px;">   
-                                <h2>CMO</h2>
-                                <p>Dania Hamzah</p>                            
-                            </div> --}} -->
-                        </div>
-                    </div>
-                  </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </section>
-        <section class="service" id="service">
-            <h1>Our Services</h1>
-            <div class="services">
-                <div class="services__section">
-                    <div class="services__section--img">
-                        <img src="assets/img/scoot.svg" alt="">
-                    </div>
-                    <div class="services__section--desc">
-                        <h2>Regular</h2>
-                        <p> <img src="assets/img/stopwatch.svg" alt=""> Estimated Time: 2-3 Days </p> 
-                        <p> <img src="assets/img/location.svg" alt=""> Coverage: All over Indonesia </p>
-                        <!-- {{-- <span data-toggle="modal" data-target="#readmore1">Read More</span> --}} -->
-                    </div>
-                </div>
-                <div class="services__section">
-                    <div class="services__section--img">
-                        <img src="assets/img/services.svg" alt="">
-                    </div>
-                    <div class="services__section--desc">
-                        <h2>Hello Tomorrow</h2>
-                        <p> <img src="assets/img/stopwatch.svg" alt=""> Estimated Time: The Next Day </p> 
-                        <p> <img src="assets/img/location.svg" alt=""> Coverage: All over Indonesia </p>
-                        <!-- {{-- <span data-toggle="modal" data-target="#readmore2">Read More</span> --}} -->
-                    </div>
-                </div>
-                <div class="services__section">
-                    <div class="services__section--img">
-                        <img src="assets/img/rocket.svg" alt="">
-                    </div>
-                    <div class="services__section--desc">
-                        <h2>My Day One</h2>
-                        <p> <img src="assets/img/stopwatch.svg" alt=""> Estimated Time: Same Day </p> 
-                        <p> <img src="assets/img/location.svg" alt=""> Coverage: All over Indonesia </p>
-                        <!-- {{-- <span data-toggle="modal" data-target="#readmore3">Read More</span> --}} -->
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="technology" id="technology">
-            <h1>Features</h1>
-            <div class="techs">
-                <div class="techs__section">
-                    <div class="techs__section--content">
-                        <img src="assets/img/Tracking.png" alt="">
-                        <h2>Real Time Tracking </h2>
-                        <p>We will notify every <br> movements of your <br>package real time</p> 
-                    </div>
-                </div>
-                <div class="techs__section">
-                    <div class="techs__section--content">
-                        <img src="assets/img/handphone.svg" alt="">
-                        <h2>Online Service</h2>
-                        <p>Everything is accesible <br>through your phone <br>via your browser</p> 
-                    </div>
-                </div>
-                <div class="techs__section">
-                    <div class="techs__section--content">
-                        <img src="assets/img/PDF.png" alt="">
-                        <h2>PDF Format</h2>
-                        <p>All of your reports will <br>be emailed in PDF format</p> 
-                    </div>
-                </div>
-                <div class="techs__section">
-                    <div class="techs__section--content">
-                        <img src="assets/img/Cities.png" alt="">
-                        <h2>Reaching Many Cities <br>Accross The Country</h2>
-                        <p>Our services reach <br>more than 50 cities <br>around Indonesia</p> 
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="locations" id="locations">
-            <h1>Locations</h1>
-            <div class="locations__container">
-                <div class="locations__container--content">
-                    <img src="assets/img/Bali.png" alt="">
-                </div>
-                <div class="locations__container--content">
-                    <img src="assets/img/Makassar.png" alt="">
-                </div>
-                <div class="locations__container--content">
-                    <img src="assets/img/Surabaya.png" alt="">
-                </div>
-                <div class="locations__container--content">
-                    <img src="assets/img/Jakarta.png" alt="">
-                </div>
-            </div>
-            <div class="locations__dots">
-                <img src="assets/img/dots.png" alt="">
-            </div>
-        </section>
-        <section class="contactus" id="contactus">
-            <div class="contactus__left">
-                <h1>Contact Us</h1>
-                <p>Questions or concerns? Just fill out the form below and our support <br>team will get back to you within 24 hours</p>
-            </div>
-            <div class="contactus__right">
-                <form action="">     
-                    <div class="contactus__right--names">
-                        <input type="text" placeholder="First Name">
-                        <input type="text" placeholder="Last Name">
-                    </div>
-                    <div class="contactus__right--emails">
-                        <input type="email" placeholder="Email">
-                    </div>
-                    <div class="contactus__right--numbers">
-                        <input type="number" placeholder="Phone Number" min="0">
-                    </div>
-                    <div class="contactus__right--textarea">
-                        <textarea name="message" id="" cols="30" rows="10" placeholder="Send Message"></textarea>
-                    </div>
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
-        </section>
+      <!-- navbar links -->
+      <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-link fw-bold text-light hover-txt-blue" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold text-light hover-txt-blue" href="/aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold text-light hover-txt-blue" href="#footer">Contact Us</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link dropdown-toggle hover-txt-blue text-white" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-person-fill"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="{{ route('login') }}">Log out</a></li>
+            </ul>
+          </li> -->
+        </ul>
+      </div>
     </div>
-    <!-- @include('inc.readmore1')
-    @include('inc.readmore2')
-    @include('inc.readmore3') -->
+  </nav>
 
-    <footer>
-        <div class="footer">
-            <div class="footer__container">
-                <div class="footer__container--content">
-                    <h2>Address</h2>
-                    <p>Pipang Ltd, Griva Digeni, <br>
-                        81-83 Jacovides Tower, 1st Floor <br>
-                        1090 Picosia USA</p>
-                </div>
-                <!-- {{-- <div class="footer__container--content">
-                    <h2>Apps</h2>
-                    <a href="https://play.google.com/store/apps" target="_blank" rel="noopener noreferrer">
-                        <img class="app_img" src="{{url('assets/img/download_on2.png')}}" alt=""> <br>
-                    </a>
-                    <a href="https://www.apple.com/id/app-store/" target="_blank" rel="noopener noreferrer">
-                        <img class="app_img" src="{{url('assets/img/download_on2_apps.png')}}" alt="">
-                    </a>
-                </div> --}} -->
-                <div class="footer__container--content">
-                    <h2>Get In Touch</h2>
-                    <p>info@citiposexpress.com</p>
-                    <p>+62 852-1640-4696</p>
-                    <img class="social_img" src="assets/img/Social.svg" alt="">
-                </div>
-                <div class="footer__container--content">
-                    <h2>We Support</h2>
-                    <img class="payments_img" src="assets/img/payments.png" alt="">
-                </div>
+  <!-- HeroSection -->
+  <section id="hero" class="py-5">
+      <div class="container-lg my-5">
+          <div class="row justify-content-center align-items-center g-4 mb-5">
+            <div class="col-md-6 d-block d-md-none">
+                <img src="./assets/vidimage-plane1.svg" class="img-fluid c-pointer" alt="video-link" onclick="window.open('https://www.youtube.com/watch?v=DLzxrzFCyOs');">
             </div>
-            <div class="footer__copyright">
-                <span>Copyright 2021 @ CitiposExpress All Rights Reserved</span>
+              <div class="col-md-6">
+                  <h1 class="txt-blue fw-bold">Welcome to Car.Go</h1>
+                  <h3 class="mb-4">Sub - Heading 1</h3>
+                  <p class="text-muted mb-5 fs-4">We serve delivery to all cities of Indonesia via domestic air. Our experienced and professional operational staff and partners work together as a solid team to handle all processes of delivering goods on time and achieving the promised lead time.</p>
+                  <button class="btn bg-blue text-white fw-bold px-3 rounded-pill fs-5" onclick="window.location.href='#aboutussection'">Get Started!</button>
+              </div>
+              <div class="col-md-6 d-none d-md-block">
+                  <img src="./assets/vidimage-container2.svg" class="img-fluid c-pointer" alt="video-link" onclick="window.open('https://www.youtube.com/watch?v=DLzxrzFCyOs');">
+              </div>
+          </div>
+          <div class="row justify-content-center align-items-center mt-5 ">
+              <div class="col-md-2 col-lg-4 text-center">
+                <img src="./assets/scroll.svg" alt="" class="img-fluid up-down" >
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- AboutusSection -->
+  <section id="aboutussection" class="aboutus-section vh-100">
+    <div class="container-lg h-100 ">
+        <!-- <div class="page-title bg-grey fw-bold px-3 py-2">
+            Get To Know Us 
+        </div> -->
+        <div class="title"></div>
+        <div class="row align-items-center h-100 ">
+            <div class="col-md-6">
+                <h1 class="text-white fw-bold mb-5">
+                  CAR.GO is a logistics service that focuses on air cargo delivery in the country, we are the answer for all corporate and small retail stores in the delivery of goods, we can assure everyone that our service is definitely safe, fast and comfortable for every user.
+                </h1>
+                <button class="btn bg-blue text-white fw-bold px-4 rounded-pill fs-5" onclick="window.location.href='/aboutus.html'">Read More</button>
             </div>
         </div>
-    </footer>
+    </div>
+  </section>
 
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
+  <!-- WhyusSection -->
+  <section id="whyus" class="whyus bg-blue">
+      <div class="container-lg">
+        <div class="title"></div>
+        <div class="row align-items-center justify-content-center g-4 py-5">
+            <div class="col-md-6">
+                <img src="/assets/speedometer.svg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <div class="row align-items-center justify-content-center g-4 mb-5">
+                    <div class="col-md-6">
+                        <img src="/assets/supply Chain.svg" alt="" class="img-fluid mb-5">
+                        <h2 class="fw-bold mb-3">Transparency Of <br> Datas</h2>
+                        <!-- <p class="text-muted fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, pariatur.</p> -->
+                        <p class="text-muted fs-5">We will be 100% tranpsarent on giving you the datas about your shipments. </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="/assets/security.svg" alt="" class="img-fluid mb-5">
+                        <h2 class="fw-bold mb-3">Safest <br> Security</h2>
+                        <!-- <p class="text-muted fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, pariatur.</p> -->
+                        <p class="text-muted fs-5">Our security will make sure that your item will always be safe on our hands.</p>
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-center g-4">
+                    <div class="col-md-6">
+                        <img src="/assets/pin.svg" alt="" class="img-fluid mb-5">
+                        <h2 class="fw-bold mb-3">Real Time <br> Tracking</h2>
+                        <!-- <p class="text-muted fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, pariatur.</p> -->
+                        <p class="text-muted fs-5">You will be able to track your shipment process in real time.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="/assets/clock.svg" alt="" class="img-fluid mb-5">
+                        <h2 class="fw-bold mb-3">Quick <br> Process</h2>
+                        <!-- <p class="text-muted fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, pariatur.</p> -->
+                        <p class="text-muted fs-5">You will not be waiting for long for your shipment to be arrived.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+  </section>
 
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-    });
-});
-    </script>
+  <!-- FooterSection -->
+  <section id="footer">
+      <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div class="container-fluid px-0">
+        <footer class="text-center text-lg-start text-white bg-black">
+            <div class="container text-center text-md-start g-5 ">
+                <div class="row py-5 border-bottom border-grey">
+                    <div class="col-md-4">
+                        <img src="/assets/cardotgologo.svg" alt="" class="img-fluid mb-3" width="50" height="50">
+                        <p class="fw-bold mb-2">Tanggerang, Indonesia | Info@car.go.id</p>
+                        <div class="mb-3">
+                            <a href="https://www.facebook.com/profile.php?id=100075554903678" class="text-white h4  text-decoration-none ">
+                              <i class="bi bi-facebook social-hover-color-fb"></i>
+                            </a>
+                            <a href="https://www.instagram.com/cardotgo.id/" class="text-white h4 ms-3 text-decoration-none ">
+                              <i class="bi bi-instagram social-hover-color-ig"></i>
+                            </a>
+                            <!-- <a href="#" class="text-white h4 ms-3 text-decoration-none ">
+                              <i class="bi bi-linkedin social-hover-color-linkedin"></i>
+                            </a> -->
+                        </div>
+                        <p class="fw-bold">+62 - 812 - 8848 - 7450</p>
+                        <p class="fw-bold">+62 - 821 - 1098 - 4884</p>
+                        <p class="fw-bold">+62 - 856 - 9347 - 7628</p>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase fw-bold ">Useful Links</h6>
+                        <hr class="mb-3 mt-0 d-inline-block mx-auto bg-grey " width="85" height="2px"/>
+                        <p>
+                            <a href="./index.html" class="txt-grey text-decoration-none">Home</a>
+                        </p>
+                        <p>
+                            <a href="/aboutus.html" class="txt-grey text-decoration-none">About Us</a>
+                        </p>
+                        <!-- <p>
+                            <a href="#features" class="txt-grey text-decoration-none">Features</a>
+                        </p> -->
+                        <p>
+                            <a href="#footer" class="txt-grey text-decoration-none">Contact Us</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <h6 class="text-uppercase fw-bold ">Be in the know</h6>
+                        <hr class="mb-3 mt-0 d-inline-block mx-auto bg-grey " width="125" height="2px"/>
+                        <!-- <p class="txt-grey mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, magnam ipsa! Et iusto tempore, facilis, tenetur impedit, aliquid nostrum expedita ad minus blanditiis dicta commodi atque quo voluptatum placeat exercitationem?</p> -->
+                        <p class="txt-grey mb-3">Subscribe to our daily mail post to be updated about many events and promos from our company by submiting your email address down below !</p>
+                        <div class="">
+                            <form>
+                                <label for="email" class="form-label txt-grey">Email</label>
+                                <div class="input-group mb-4">
+                                    <input type="text" id="email" class="form-control" />
+                                    <button class="btn bg-blue txt-white fw-bold rounnded-pill px-md-5">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-between align-items-center py-3">
+                    <div class="col-md-6">
+                        <p class="fw-bold">Copyright @2021 PT.Tujuh muda group</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row justify-content-end">
+                            <div class="col-md-4 text-md-end">
+                                <button class="fw-bold btn bg-black txt-white p-0"   data-bs-toggle="modal" data-bs-target="#tos">Terms Of Services</button>
+                            </div>
+                            <div class="col-md-4 text-md-end">
+                                <button class="fw-bold btn bg-black txt-white p-0"   data-bs-toggle="modal" data-bs-target="#pp">Privacy Policy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+  <!-- End of .container -->
+  </section>
+
+<!-- TermsofserviceSection -->
+<!-- Modal -->
+<div class="modal fade" id="tos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="exampleModalLabel">Terms Of Service</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <h4>1. Terms</h4>
+            
+            <p>By accessing this Website, accessible from ctiposexpress.com, you are agreeing to be bound by these Website Terms and Conditions of Use and agree that you are responsible for the agreement with any applicable local laws. If you disagree with any of these terms, you are prohibited from accessing this site. The materials contained in this Website are protected by copyright and trade mark law.</p>
+            
+            <h4>2. Use License</h4>
+            
+            <p>Permission is granted to temporarily download one copy of the materials on Car.Go's Website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p>
+            
+            <ul>
+                <li>modify or copy the materials;</li>
+                <li>use the materials for any commercial purpose or for any public display;</li>
+                <li>attempt to reverse engineer any software contained on Car.Go's Website;</li>
+                <li>remove any copyright or other proprietary notations from the materials; or</li>
+                <li>transferring the materials to another person or "mirror" the materials on any other server.</li>
+            </ul>
+            
+            <p>This will let Car.Go to terminate upon violations of any of these restrictions. Upon termination, your viewing right will also be terminated and you should destroy any downloaded materials in your possession whether it is printed or electronic format.</p>
+            
+            <h4>3. Disclaimer</h4>
+            
+            <p>All the materials on Car.Go’s Website are provided "as is". Car.Go makes no warranties, may it be expressed or implied, therefore negates all other warranties. Furthermore, Car.Go does not make any representations concerning the accuracy or reliability of the use of the materials on its Website or otherwise relating to such materials or any sites linked to this Website.</p>
+            
+            <h4>4. Limitations</h4>
+            
+            <p>Car.Go or its suppliers will not be hold accountable for any damages that will arise with the use or inability to use the materials on Car.Go’s Website, even if Car.Go or an authorize representative of this Website has been notified, orally or written, of the possibility of such damage. Some jurisdiction does not allow limitations on implied warranties or limitations of liability for incidental damages, these limitations may not apply to you.</p>
+            
+            <h4>5. Revisions and Errata</h4>
+            
+            <p>The materials appearing on Car.Go’s Website may include technical, typographical, or photographic errors. Car.Go will not promise that any of the materials in this Website are accurate, complete, or current. Car.Go may change the materials contained on its Website at any time without notice. Car.Go does not make any commitment to update the materials.</p>
+            
+            <h4>6. Links</h4>
+            
+            <p>Car.Go has not reviewed all of the sites linked to its Website and is not responsible for the contents of any such linked site. The presence of any link does not imply endorsement by Car.Go of the site. The use of any linked website is at the user’s own risk.</p>
+            
+            <h4>7. Site Terms of Use Modifications</h4>
+            
+            <p>Car.Go may revise these Terms of Use for its Website at any time without prior notice. By using this Website, you are agreeing to be bound by the current version of these Terms and Conditions of Use.</p>
+            
+            <h4>8. Your Privacy</h4>
+            
+            <p>Please read our Privacy Policy.</p>
+            
+            <h4>9. Governing Law</h4>
+            
+            <p>Any claim related to Car.Go's Website shall be governed by the laws of id without regards to its conflict of law provisions.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn bg-blue txt-white fw-bold" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PrivacypolicySection -->
+  <div class="modal fade" id="pp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="exampleModalLabel">Privacy Policy</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>At car.go.id, accessible from ctiposexpress.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by car.go.id and how we use it.</p>
+
+            <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.</p>
+
+            <p>This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in car.go.id. This policy is not applicable to any information collected offline or via channels other than this website.</p>
+
+            <h4>Consent</h4>
+
+            <p>By using our website, you hereby consent to our Privacy Policy and agree to its terms.</p>
+
+            <h4>Information we collect</h2>
+
+            <p>The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be made clear to you at the point we ask you to provide your personal information.</p>
+            <p>If you contact us directly, we may receive additional information about you such as your name, email address, phone number, the contents of the message and/or attachments you may send us, and any other information you may choose to provide.</p>
+            <p>When you register for an Account, we may ask for your contact information, including items such as name, company name, address, email address, and telephone number.</p>
+
+            <h4>How we use your information</h4>
+
+            <p>We use the information we collect in various ways, including to:</p>
+
+            <ul>
+            <li>Provide, operate, and maintain our website</li>
+            <li>Improve, personalize, and expand our website</li>
+            <li>Understand and analyze how you use our website</li>
+            <li>Develop new products, services, features, and functionality</li>
+            <li>Communicate with you, either directly or through one of our partners, including for customer service, to provide you with updates and other information relating to the website, and for marketing and promotional purposes</li>
+            <li>Send you emails</li>
+            <li>Find and prevent fraud</li>
+            </ul>
+
+            <h4>Log Files</h4>
+
+            <p>car.go.id follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services' analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information.</p>
+
+            <h4>Cookies and Web Beacons</h4>
+
+            <p>Like any other website, car.go.id uses 'cookies'. These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content based on visitors' browser type and/or other information.</p>
+
+            <p>For more general information on cookies, please read <a href="https://www.cookieconsent.com/">more on the Cookie Consent website</a>.</p>
+
+
+
+            <h4>Advertising Partners Privacy Policies</h4>
+
+            <P>You may consult this list to find the Privacy Policy for each of the advertising partners of car.go.id.</p>
+
+            <p>Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on car.go.id, which are sent directly to users' browser. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.</p>
+
+            <p>Note that car.go.id has no access to or control over these cookies that are used by third-party advertisers.</p>
+
+            <h4>Third Party Privacy Policies</h4>
+
+            <p>car.go.id's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options. </p>
+
+            <p>You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers' respective websites.</p>
+
+            <h4>CCPA Privacy Rights (Do Not Sell My Personal Information)</h4>
+
+            <p>Under the CCPA, among other rights, California consumers have the right to:</p>
+            <p>Request that a business that collects a consumer's personal data disclose the categories and specific pieces of personal data that a business has collected about consumers.</p>
+            <p>Request that a business delete any personal data about the consumer that a business has collected.</p>
+            <p>Request that a business that sells a consumer's personal data, not sell the consumer's personal data.</p>
+            <p>If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.</p>
+
+            <h4>GDPR Data Protection Rights</h4>
+
+            <p>We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following:</p>
+            <p>The right to access – You have the right to request copies of your personal data. We may charge you a small fee for this service.</p>
+            <p>The right to rectification – You have the right to request that we correct any information you believe is inaccurate. You also have the right to request that we complete the information you believe is incomplete.</p>
+            <p>The right to erasure – You have the right to request that we erase your personal data, under certain conditions.</p>
+            <p>The right to restrict processing – You have the right to request that we restrict the processing of your personal data, under certain conditions.</p>
+            <p>The right to object to processing – You have the right to object to our processing of your personal data, under certain conditions.</p>
+            <p>The right to data portability – You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.</p>
+            <p>If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.</p>
+
+            <h4>Children's Information</h4>
+
+            <p>Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.</p>
+
+            <p>car.go.id does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn bg-blue txt-white fw-bold" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var myModal = document.getElementById('myModal')
+    var myInput = document.getElementById('myInput')
+
+    myModal.addEventListener('shown.bs.modal', function () {
+    myInput.focus()
+    })
+  </script>
 </body>
 </html>
